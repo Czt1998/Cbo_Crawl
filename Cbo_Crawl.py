@@ -5,7 +5,7 @@ import os
 import urllib.request
 from selenium import webdriver
 
-driver = webdriver.PhantomJS(executable_path='./phantomjs')
+driver = webdriver.PhantomJS()
 # driver = webdriver.Chrome()
 
 

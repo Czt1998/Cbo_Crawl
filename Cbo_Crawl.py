@@ -41,7 +41,8 @@ def Get_data(url,movie_name,movie_year):
     for i in range(1,market.__len__()+1,1):
         data_week = list()
         weeks = driver.find_elements_by_xpath("//div[@id='tabcont2']/table[" + str(i) + "]/tbody/tr")
-        if i != 2:
+        market_name = driver.find_element_by_xpath("//div[@id='tabcont2']/h4[" + str(i) + "]").text
+        if market_name != '香港票房':
             star = 2
         else:
             star = 1
@@ -68,7 +69,6 @@ def Get_data(url,movie_name,movie_year):
                              '单周票房': week_money,
                              '累计票房': total_money}
             data_week.append(week_dict)
-        market_name = driver.find_element_by_xpath("//div[@id='tabcont2']/h4[" + str(i) + "]").text
         market_name = market_name[0:4]
         print(market_name)
         print(data_week)

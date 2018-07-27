@@ -16,4 +16,15 @@ movie_name　　movie_id<br>
 杜拉拉升职记　　3820191<br>
 锦衣卫　　　　　3754946<br>
 ......<br><br>
-* And then use the `movie name` to search in cbo, check if name and year are right. If it's correct, get the url of the movie by xpath.<br>
+* And then use the `movie name` to search in cbo, check if name and year are right. If it's correct, get the url of the movie by xpath.
+![](https://github.com/Czt1998/Cbo_Crawl/blob/master/pic/search)
+![](https://github.com/Czt1998/Cbo_Crawl/blob/master/pic/url)
+* Finally get the data we want.
+![](https://github.com/Czt1998/Cbo_Crawl/blob/master/pic/data)
+## Sample output
+内地票房<br>
+[ {'周次'：...,'场均人次':...,'单周票房':...,'累计票房':...,'上映天数':...},　...]<br>
+香港票房<br>
+[ {'周次'：...,'场均人次':...,'单周票房':...,'累计票房':...},　...]<br>
+北美票房<br>
+[ {'周次'：...,'场均人次':...,'单周票房':...,'累计票房':...},　...]<br>
